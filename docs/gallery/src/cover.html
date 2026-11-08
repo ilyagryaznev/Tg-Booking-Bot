@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  body { width: 1280px; height: 769px; overflow: hidden; background: radial-gradient(circle at 80% 30%, #1d4f86 0%, #0d1b2a 55%, #08111b 100%); color: #fff; display: flex; align-items: center; padding: 0 70px; gap: 60px; }
+  .left { flex: 1; }
+  .tag { display: inline-block; background: rgba(58,142,230,.18); color: #7cc0ff; border: 1px solid rgba(124,192,255,.35); padding: 7px 14px; border-radius: 999px; font-size: 17px; font-weight: 600; margin-bottom: 26px; }
+  h1 { font-size: 66px; line-height: 1.04; letter-spacing: -1.8px; font-weight: 800; }
+  h1 em { font-style: normal; color: #5fb3ff; }
+  .points { margin: 32px 0 36px; display: grid; gap: 14px; font-size: 23px; color: #d6e4f0; }
+  .points div::before { content: "✓"; color: #4ade80; font-weight: 800; margin-right: 12px; }
+  .stack { display: flex; gap: 10px; flex-wrap: wrap; }
+  .stack span { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 10px; padding: 9px 16px; font-size: 18px; font-weight: 600; }
+  .phone { height: 680px; transform: rotate(3deg); }
+</style></head><body>
+<div class="left">
+  <div class="tag">Telegram bot · Go backend</div>
+  <h1>Online <em>booking bot</em><br>for your business</h1>
+  <div class="points">
+    <div>Customers book 24/7 in 3 taps</div>
+    <div>No double bookings, guaranteed</div>
+    <div>Auto-reminders &amp; admin schedule</div>
+    <div>Deployed to your server with Docker</div>
+  </div>
+  <div class="stack"><span>Go</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>nginx</span></div>
+</div>
+<div class="phone"><div class="screen">
+  <div class="top"><div class="ava">DB</div><div><b>Demo Barbershop</b><span>bot</span></div></div>
+  <div class="chat">
+    <div class="msg">Hi, Alice! 👋 I'm the booking assistant of <b>Demo Barbershop</b>.</div>
+    <div class="msg me">📅 Book a visit</div>
+    <div class="msg"><b>Step 1/3.</b> Choose a service:</div>
+    <div class="kb"><div class="row"><button class="hl">Haircut · 60 min · $30</button></div><div class="row"><button>Beard trim · 30 min · $15</button></div></div>
+    <div class="msg"><b>Step 3/3.</b> Haircut on <b>Thu, 05 Nov</b> — pick a time:</div>
+    <div class="kb">
+     <div class="row"><button>10:00</button><button>10:30</button><button>11:00</button><button>13:00</button></div>
+     <div class="row"><button>13:30</button><button class="hl">14:00</button><button>14:30</button><button>16:30</button></div>
+    </div>
+    <div class="msg">✅ You're booked!<br><br>💈 <b>Haircut</b><br>🗓 <b>Thu, 05 Nov · 14:00</b></div>
+    <div class="msg">⏰ Reminder: your visit is coming up!<br>🗓 <b>Thu, 05 Nov · 14:00</b></div>
+  </div>
+</div></div>
+</body></html>

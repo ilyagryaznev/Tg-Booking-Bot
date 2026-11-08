@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+  body { width: 1280px; height: 769px; background: #eef2f6; display: flex; flex-direction: column; align-items: center; padding: 34px 0 0; }
+  h1 { font-size: 30px; color: #13202e; letter-spacing: -.5px; }
+  p.sub { color: #5a6b7c; margin: 6px 0 24px; font-size: 16px; }
+  .row3 { display: flex; gap: 40px; align-items: flex-start; }
+  .phone { height: 600px; }
+  .step { text-align: center; color: #13202e; font-weight: 600; margin-bottom: 10px; font-size: 15px; }
+  .step i { font-style: normal; background: #3a8ee6; color: #fff; border-radius: 50%; display: inline-block; width: 24px; height: 24px; line-height: 24px; margin-right: 6px; font-size: 13px; }
+</style></head><body>
+<h1>Book a visit in 3 taps</h1>
+<p class="sub">Customers choose a service, a day and a time. The bot shows only free slots.</p>
+<div class="row3">
+ <div>
+  <div class="step"><i>1</i>Choose a service</div>
+  <div class="phone"><div class="screen">
+   <div class="top"><div class="ava">DB</div><div><b>Demo Barbershop</b><span>bot</span></div></div>
+   <div class="chat">
+    <div class="msg">Hi, Alice! 👋<br>I'm the booking assistant of <b>Demo Barbershop</b>.<br><br>Book a visit in a few taps — I'll remind you before it starts.<span class="time">14:02</span></div>
+    <div class="msg me">📅 Book a visit<span class="time">14:02</span></div>
+    <div class="msg"><b>Step 1/3.</b> Choose a service:<span class="time">14:02</span></div>
+    <div class="kb">
+     <div class="row"><button class="hl">Haircut · 60 min · $30</button></div>
+     <div class="row"><button>Beard trim · 30 min · $15</button></div>
+     <div class="row"><button>Haircut + Beard · 90 min · $40</button></div>
+     <div class="row"><button>Kids haircut · 30 min · $20</button></div>
+    </div>
+   </div></div></div>
+ </div>
+ <div>
+  <div class="step"><i>2</i>Pick a free time</div>
+  <div class="phone"><div class="screen">
+   <div class="top"><div class="ava">DB</div><div><b>Demo Barbershop</b><span>bot</span></div></div>
+   <div class="chat">
+    <div class="msg"><b>Step 3/3.</b> Haircut on <b>Thu, 05 Nov</b> — pick a time:<span class="time">14:03</span></div>
+    <div class="kb">
+     <div class="row"><button>10:00</button><button>10:30</button><button>11:00</button><button>13:00</button></div>
+     <div class="row"><button>13:30</button><button class="hl">14:00</button><button>14:30</button><button>16:30</button></div>
+     <div class="row"><button>17:00</button><button>17:30</button><button>18:00</button><button>18:30</button></div>
+     <div class="row"><button>« Back</button></div>
+    </div>
+    <div class="msg">Please check your booking:<br><br>💈 <b>Haircut</b> (60 min, $30)<br>🗓 <b>Thu, 05 Nov · 14:00</b><br><br>Confirm?<span class="time">14:03</span></div>
+    <div class="kb"><div class="row"><button class="hl">✅ Confirm</button><button>✖️ Cancel</button></div></div>
+   </div></div></div>
+ </div>
+ <div>
+  <div class="step"><i>3</i>Booked + reminder</div>
+  <div class="phone"><div class="screen">
+   <div class="top"><div class="ava">DB</div><div><b>Demo Barbershop</b><span>bot</span></div></div>
+   <div class="chat">
+    <div class="msg">✅ You're booked!<br><br>💈 <b>Haircut</b><br>🗓 <b>Thu, 05 Nov · 14:00</b><span class="time">14:03</span></div>
+    <div class="msg">⏰ Reminder: your visit to <b>Demo Barbershop</b> is coming up!<br><br>💈 Haircut<br>🗓 <b>Thu, 05 Nov · 14:00</b><span class="time">12:00</span></div>
+    <div class="msg me">📋 My bookings<span class="time">12:01</span></div>
+    <div class="msg"><b>Your upcoming bookings:</b><br><br>1. Haircut — <b>Thu, 05 Nov · 14:00</b><span class="time">12:01</span></div>
+    <div class="kb"><div class="row"><button>❌ Cancel #1 (05 Nov 14:00)</button></div></div>
+   </div></div></div>
+ </div>
+</div>
+</body></html>

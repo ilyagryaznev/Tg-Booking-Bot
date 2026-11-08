@@ -1,0 +1,13 @@
+flowchart LR
+    U["👤 Customer<br/>Telegram app"] -->|taps buttons| TG["Telegram<br/>Bot API"]
+    A["🛠 Owner / Admin<br/>Telegram app"] --> TG
+    TG <-->|long polling| B
+
+    subgraph DC["docker compose"]
+        B["Go bot<br/>8 worker goroutines"]
+        R["⏰ Reminder loop<br/>every 30s"]
+        B --- R
+        B -->|drafts with TTL<br/>rate limiting| RD[("Redis")]
+        B -->|bookings, services<br/>migrations| PG[("PostgreSQL<br/>EXCLUDE constraint:<br/>no overlapping bookings")]
+        R -->|FOR UPDATE<br/>SKIP LOCKED| PG
+    end
